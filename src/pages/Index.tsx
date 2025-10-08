@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import MobileMenu from "@/components/MobileMenu";
+import FAQ from "@/components/FAQ";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const categories = [
@@ -60,6 +61,7 @@ const Index = () => {
   const howItWorksAnim = useScrollAnimation();
   const paymentsAnim = useScrollAnimation();
   const reviewsAnim = useScrollAnimation();
+  const faqAnim = useScrollAnimation();
   const footerAnim = useScrollAnimation();
 
   const handleContactClick = (url: string) => {
@@ -410,6 +412,20 @@ const Index = () => {
               Начать зарабатывать
             </Button>
           </div>
+        </div>
+      </section>
+
+      <section id="faq" className="py-20 px-4 bg-background">
+        <div ref={faqAnim.ref} className={`container mx-auto max-w-4xl transition-all duration-1000 ${faqAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-green-gold bg-clip-text text-[#ffffff] my-0 py-[3px]">
+              Частые вопросы
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Ответы на самые популярные вопросы о работе с FASTDEALER
+            </p>
+          </div>
+          <FAQ />
         </div>
       </section>
 

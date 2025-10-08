@@ -56,6 +56,12 @@ const MobileMenu = ({ onContactClick }: MobileMenuProps) => {
                   Выплаты
                 </button>
                 <button
+                  onClick={() => scrollToSection('faq')}
+                  className="text-lg font-medium text-left py-3 px-4 hover:bg-primary/10 rounded-lg transition-colors"
+                >
+                  Вопросы
+                </button>
+                <button
                   onClick={() => scrollToSection('contacts')}
                   className="text-lg font-medium text-left py-3 px-4 hover:bg-primary/10 rounded-lg transition-colors"
                 >
