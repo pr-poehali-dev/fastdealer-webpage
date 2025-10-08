@@ -76,18 +76,18 @@ const Index = () => {
         <div className="absolute inset-0 gradient-green-gold opacity-90" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
         
-        <div className="relative z-10 container mx-auto px-4 py-20 text-center">
+        <div className="relative z-10 container mx-auto px-4 py-12 md:py-20 text-center">
           <div className="animate-fade-in">
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center mb-8 md:mb-10">
               <Logo />
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 text-white px-2">
               FASTDEALER
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto font-medium">
+            <p className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 text-white/90 max-w-3xl mx-auto font-medium px-4">
               Заработок без трудоустройства
             </p>
-            <p className="text-lg md:text-xl mb-12 text-white/80 max-w-4xl mx-auto leading-relaxed">Наш сервис помогает людям заработать без необходимости трудоустройства, мы являемся посредником самых крупных рекламодателей и компаний, платим за оформление продуктов и выполнение заданий от наших партнёров!</p>
+            <p className="text-base sm:text-lg md:text-xl mb-8 md:mb-12 text-white/80 max-w-4xl mx-auto leading-relaxed px-4">Наш сервис помогает людям заработать без необходимости трудоустройства, мы являемся посредником самых крупных рекламодателей и компаний, платим за оформление продуктов и выполнение заданий от наших партнёров!</p>
             <Button 
               size="lg" 
               className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 h-auto font-semibold shadow-2xl animate-scale-in"

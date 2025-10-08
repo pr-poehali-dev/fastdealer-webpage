@@ -1,18 +1,55 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 const Logo = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const logoRef = useRef<HTMLDivElement>(null);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!logoRef.current) return;
+    
+    const rect = logoRef.current.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    
+    const distanceX = mouseX - centerX;
+    const distanceY = mouseY - centerY;
+    const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
+    
+    const threshold = 150;
+    
+    if (distance < threshold) {
+      const force = (threshold - distance) / threshold;
+      const moveX = -(distanceX / distance) * force * 30;
+      const moveY = -(distanceY / distance) * force * 30;
+      setPosition({ x: moveX, y: moveY });
+    } else {
+      setPosition({ x: 0, y: 0 });
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setPosition({ x: 0, y: 0 });
+  };
 
   return (
     <div
-      className="relative w-24 h-24 md:w-32 md:h-32"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      ref={logoRef}
+      className="relative w-32 h-32 md:w-40 md:h-40"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
     >
-      <div className={`w-full h-full gradient-green-gold rounded-2xl flex items-center justify-center shadow-2xl transition-all duration-300 ${isHovered ? 'animate-shake' : ''}`}>
+      <div 
+        className="w-full h-full gradient-green-gold rounded-2xl flex items-center justify-center shadow-2xl transition-all duration-200 ease-out"
+        style={{
+          transform: `translate(${position.x}px, ${position.y}px)`
+        }}
+      >
         <svg
           viewBox="0 0 100 100"
-          className="w-16 h-16 md:w-20 md:h-20"
+          className="w-20 h-20 md:w-24 md:h-24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -60,7 +97,13 @@ const Logo = () => {
         <div className="absolute inset-0 rounded-2xl bg-white opacity-0 hover:opacity-10 transition-opacity" />
       </div>
       
-      <div className={`absolute -inset-1 gradient-green-gold rounded-2xl blur-lg opacity-0 transition-opacity duration-300 ${isHovered ? 'opacity-50 animate-pulse' : ''}`} style={{ zIndex: -1 }} />
+      <div 
+        className="absolute -inset-1 gradient-green-gold rounded-2xl blur-lg opacity-30 transition-all duration-200"
+        style={{ 
+          zIndex: -1,
+          transform: `translate(${position.x}px, ${position.y}px)`
+        }} 
+      />
     </div>
   );
 };
