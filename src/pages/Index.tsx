@@ -168,7 +168,7 @@ const Index = () => {
       <section className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-green-gold bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-green-gold bg-clip-text text-[#ffffff]">
               Выплаты нашим клиентам
             </h2>
             <p className="text-muted-foreground text-lg">
