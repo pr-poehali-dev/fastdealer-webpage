@@ -209,14 +209,11 @@ const Index = () => {
 
             <Card className="overflow-hidden border-primary/20 hover:border-primary/50 transition-all">
               <CardContent className="p-0">
-                <div className="aspect-[3/4] bg-muted/30 flex items-center justify-center relative group">
-                  <div className="absolute inset-0 border-2 border-dashed border-primary/30 m-4 rounded-lg flex items-center justify-center">
-                    <div className="text-center">
-                      <Icon name="Image" className="mx-auto mb-2 text-muted-foreground" size={48} />
-                      <p className="text-muted-foreground text-sm">Скриншот выплаты #4</p>
-                    </div>
-                  </div>
-                </div>
+                <img 
+                  src="https://cdn.poehali.dev/files/8cf238c6-cfd8-45bd-928e-68b943d026fb.jpg" 
+                  alt="Выплата 3000₽" 
+                  className="w-full h-full object-cover aspect-[3/4]"
+                />
               </CardContent>
             </Card>
 
