@@ -165,6 +165,106 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 px-4 bg-background">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-green-gold bg-clip-text text-transparent">
+              Выплаты нашим клиентам
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Реальные выплаты реальным людям — мы ценим каждого партнёра
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="overflow-hidden border-primary/20 hover:border-primary/50 transition-all">
+              <CardContent className="p-0">
+                <div className="aspect-[3/4] bg-muted/30 flex items-center justify-center relative group">
+                  <div className="absolute inset-0 border-2 border-dashed border-primary/30 m-4 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <Icon name="Image" className="mx-auto mb-2 text-muted-foreground" size={48} />
+                      <p className="text-muted-foreground text-sm">Скриншот выплаты #1</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-primary/20 hover:border-primary/50 transition-all">
+              <CardContent className="p-0">
+                <div className="aspect-[3/4] bg-muted/30 flex items-center justify-center relative group">
+                  <div className="absolute inset-0 border-2 border-dashed border-primary/30 m-4 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <Icon name="Image" className="mx-auto mb-2 text-muted-foreground" size={48} />
+                      <p className="text-muted-foreground text-sm">Скриншот выплаты #2</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-primary/20 hover:border-primary/50 transition-all">
+              <CardContent className="p-0">
+                <div className="aspect-[3/4] bg-muted/30 flex items-center justify-center relative group">
+                  <div className="absolute inset-0 border-2 border-dashed border-primary/30 m-4 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <Icon name="Image" className="mx-auto mb-2 text-muted-foreground" size={48} />
+                      <p className="text-muted-foreground text-sm">Скриншот выплаты #3</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-primary/20 hover:border-primary/50 transition-all">
+              <CardContent className="p-0">
+                <div className="aspect-[3/4] bg-muted/30 flex items-center justify-center relative group">
+                  <div className="absolute inset-0 border-2 border-dashed border-primary/30 m-4 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <Icon name="Image" className="mx-auto mb-2 text-muted-foreground" size={48} />
+                      <p className="text-muted-foreground text-sm">Скриншот выплаты #4</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-primary/20 hover:border-primary/50 transition-all">
+              <CardContent className="p-0">
+                <div className="aspect-[3/4] bg-muted/30 flex items-center justify-center relative group">
+                  <div className="absolute inset-0 border-2 border-dashed border-primary/30 m-4 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <Icon name="Image" className="mx-auto mb-2 text-muted-foreground" size={48} />
+                      <p className="text-muted-foreground text-sm">Скриншот выплаты #5</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-primary/20 hover:border-primary/50 transition-all">
+              <CardContent className="p-0">
+                <div className="aspect-[3/4] bg-muted/30 flex items-center justify-center relative group">
+                  <div className="absolute inset-0 border-2 border-dashed border-primary/30 m-4 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <Icon name="Image" className="mx-auto mb-2 text-muted-foreground" size={48} />
+                      <p className="text-muted-foreground text-sm">Скриншот выплаты #6</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-12 text-center">
+            <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 border border-primary/30 rounded-full">
+              <Icon name="CheckCircle" className="text-primary" size={20} />
+              <p className="text-foreground font-semibold">Все выплаты производятся в течение 24 часов</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="bg-card border-t border-primary/20 py-12 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-8">
