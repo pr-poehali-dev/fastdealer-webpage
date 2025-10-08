@@ -88,14 +88,16 @@ const Index = () => {
               Заработок без трудоустройства
             </p>
             <p className="text-base sm:text-lg md:text-xl mb-8 md:mb-12 text-white/80 max-w-4xl mx-auto leading-relaxed px-4">Наш сервис помогает людям заработать без необходимости трудоустройства, мы являемся посредником самых крупных рекламодателей и компаний, платим за оформление продуктов и выполнение заданий от наших партнёров!</p>
-            <Button 
-              size="lg" 
-              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 h-auto font-semibold shadow-2xl animate-scale-in"
-              onClick={() => handleContactClick('https://t.me/m/NB4CuKCDYmJi')}
-            >
-              <Icon name="Sparkles" className="mr-2" size={24} />
-              Оставить заявку на сотрудничество
-            </Button>
+            <div className="flex justify-center px-4">
+              <Button 
+                size="lg" 
+                className="bg-white text-primary hover:bg-white/90 text-base md:text-lg px-6 md:px-8 py-4 md:py-6 h-auto font-semibold shadow-2xl animate-scale-in w-full sm:w-auto"
+                onClick={() => handleContactClick('https://t.me/m/NB4CuKCDYmJi')}
+              >
+                <Icon name="Sparkles" className="mr-2" size={20} />
+                <span className="text-center">Оставить заявку на сотрудничество</span>
+              </Button>
+            </div>
           </div>
         </div>
 
@@ -407,14 +409,16 @@ const Index = () => {
             <p className="text-muted-foreground text-base md:text-lg mb-4 md:mb-6">
               Присоединяйтесь к нашей команде успешных партнёров!
             </p>
-            <Button 
-              size="lg" 
-              className="gradient-green-gold text-white hover:opacity-90 text-lg px-8 py-6 h-auto font-semibold shadow-xl"
-              onClick={() => handleContactClick('https://t.me/m/NB4CuKCDYmJi')}
-            >
-              <Icon name="UserPlus" className="mr-2" size={24} />
-              Начать зарабатывать
-            </Button>
+            <div className="flex justify-center">
+              <Button 
+                size="lg" 
+                className="gradient-green-gold text-white hover:opacity-90 text-base md:text-lg px-6 md:px-8 py-4 md:py-6 h-auto font-semibold shadow-xl w-full sm:w-auto max-w-sm"
+                onClick={() => handleContactClick('https://t.me/m/NB4CuKCDYmJi')}
+              >
+                <Icon name="UserPlus" className="mr-2" size={20} />
+                Начать зарабатывать
+              </Button>
+            </div>
           </div>
         </div>
       </section>
