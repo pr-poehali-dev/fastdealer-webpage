@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import MobileMenu from "@/components/MobileMenu";
 
 const categories = [
   {
@@ -60,6 +61,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <MobileMenu onContactClick={() => handleContactClick('https://t.me/imvesty')} />
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 gradient-green-gold opacity-90" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
@@ -89,7 +91,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4">
+      <section id="categories" className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="md:text-5xl text-center mb-16 gradient-green-gold bg-clip-text text-5xl text-[#ffffff] py-2.5 font-bold px-0 mx-[225px]">
             Категории предложений
@@ -165,7 +167,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-background">
+      <section id="payments" className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold gradient-green-gold bg-clip-text text-[#ffffff] my-0 py-[3px]">
@@ -404,7 +406,7 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-card border-t border-primary/20 py-12 px-4">
+      <footer id="contacts" className="bg-card border-t border-primary/20 py-12 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold mb-2 gradient-green-gold bg-clip-text text-[#ffffff] mx-[363px]">
