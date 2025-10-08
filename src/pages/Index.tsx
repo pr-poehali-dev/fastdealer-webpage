@@ -72,10 +72,7 @@ const Index = () => {
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto font-medium">
               Заработок без трудоустройства
             </p>
-            <p className="text-lg md:text-xl mb-12 text-white/80 max-w-4xl mx-auto leading-relaxed">
-              Наш сервис помогает людям заработать без трудоустройства, мы являемся посредником 
-              самых крупных рекламодателей и компаний
-            </p>
+            <p className="text-lg md:text-xl mb-12 text-white/80 max-w-4xl mx-auto leading-relaxed">Наш сервис помогает людям заработать без необходимости трудоустройства, мы являемся посредником самых крупных рекламодателей и компаний, платим за оформление продуктов и выполнение заданий от наших партнёров!</p>
             <Button 
               size="lg" 
               className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 h-auto font-semibold shadow-2xl animate-scale-in"
