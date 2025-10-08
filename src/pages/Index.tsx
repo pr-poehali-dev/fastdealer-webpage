@@ -256,7 +256,7 @@ const Index = () => {
           <div className="mt-12 text-center">
             <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 border border-primary/30 rounded-full">
               <Icon name="CheckCircle" className="text-primary" size={20} />
-              <p className="text-foreground font-semibold">Все выплаты производятся в течение 24 часов</p>
+              <p className="text-foreground font-semibold">Холд для новичков всего 2 недели!</p>
             </div>
           </div>
         </div>
