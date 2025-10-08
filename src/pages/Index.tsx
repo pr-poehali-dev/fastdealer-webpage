@@ -77,6 +77,11 @@ const Index = () => {
         
         <div className="relative z-10 container mx-auto px-4 py-20 text-center">
           <div className="animate-fade-in">
+            <div className="flex justify-center mb-6">
+              <div className="w-24 h-24 md:w-32 md:h-32 gradient-green-gold rounded-2xl flex items-center justify-center shadow-2xl transform hover:scale-110 transition-transform">
+                <div className="text-white font-bold text-4xl md:text-5xl">FD</div>
+              </div>
+            </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
               FASTDEALER
             </h1>
