@@ -171,12 +171,12 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold gradient-green-gold bg-clip-text text-[#ffffff] my-0 py-[3px]">
               Выплаты нашим клиентам
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-lg py-[26px]">
               Реальные выплаты реальным людям — мы ценим каждого партнёра
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-0 px-0 my-0 mx-0">
             <Card className="overflow-hidden border-primary/20 hover:border-primary/50 transition-all">
               <CardContent className="p-0">
                 <div className="aspect-[3/4] bg-muted/30 flex items-center justify-center relative group">
