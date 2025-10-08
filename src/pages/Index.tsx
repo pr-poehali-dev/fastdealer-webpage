@@ -91,11 +91,11 @@ const Index = () => {
             <div className="flex justify-center px-4">
               <Button 
                 size="lg" 
-                className="bg-white text-primary hover:bg-white/90 text-base md:text-lg px-6 md:px-8 py-4 md:py-6 h-auto font-semibold shadow-2xl animate-scale-in w-full sm:w-auto"
+                className="bg-white text-primary hover:bg-white/90 text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 h-auto font-semibold shadow-2xl animate-scale-in w-full sm:w-auto max-w-md"
                 onClick={() => handleContactClick('https://t.me/m/NB4CuKCDYmJi')}
               >
-                <Icon name="Sparkles" className="mr-2" size={20} />
-                <span className="text-center">Оставить заявку на сотрудничество</span>
+                <Icon name="Sparkles" className="mr-2 flex-shrink-0" size={18} />
+                <span className="whitespace-normal text-center leading-tight">Оставить заявку на сотрудничество</span>
               </Button>
             </div>
           </div>
@@ -412,11 +412,11 @@ const Index = () => {
             <div className="flex justify-center">
               <Button 
                 size="lg" 
-                className="gradient-green-gold text-white hover:opacity-90 text-base md:text-lg px-6 md:px-8 py-4 md:py-6 h-auto font-semibold shadow-xl w-full sm:w-auto max-w-sm"
+                className="gradient-green-gold text-white hover:opacity-90 text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 h-auto font-semibold shadow-xl w-full sm:w-auto max-w-xs"
                 onClick={() => handleContactClick('https://t.me/m/NB4CuKCDYmJi')}
               >
-                <Icon name="UserPlus" className="mr-2" size={20} />
-                Начать зарабатывать
+                <Icon name="UserPlus" className="mr-2 flex-shrink-0" size={18} />
+                <span className="whitespace-nowrap">Начать зарабатывать</span>
               </Button>
             </div>
           </div>
