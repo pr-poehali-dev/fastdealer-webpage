@@ -265,6 +265,161 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 px-4 gradient-green-gold-soft">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+              Отзывы наших партнёров
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Реальные истории успеха людей, которые с нами зарабатывают
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="border-primary/20 hover:border-primary/50 transition-all bg-card/80 backdrop-blur">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 gradient-green-gold rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    А
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-foreground">Александр</h4>
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" className="text-yellow-500 fill-yellow-500" size={14} />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  "Работаю с FASTDEALER уже 3 месяца. Выплаты всегда вовремя, поддержка отвечает быстро. Доход растёт каждый месяц, как и обещали!"
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-primary/20 hover:border-primary/50 transition-all bg-card/80 backdrop-blur">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 gradient-green-gold rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    М
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-foreground">Мария</h4>
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" className="text-yellow-500 fill-yellow-500" size={14} />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  "Начала с простых заданий, сейчас уже оформляю по 10-15 продуктов в неделю. Отличный дополнительный доход без привязки к офису!"
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-primary/20 hover:border-primary/50 transition-all bg-card/80 backdrop-blur">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 gradient-green-gold rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    Д
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-foreground">Дмитрий</h4>
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" className="text-yellow-500 fill-yellow-500" size={14} />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  "Сначала не верил, что всё так просто. Но уже получил 5 выплат, все в течение суток. Рекомендую всем, кто хочет зарабатывать онлайн!"
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-primary/20 hover:border-primary/50 transition-all bg-card/80 backdrop-blur">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 gradient-green-gold rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    Е
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-foreground">Елена</h4>
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" className="text-yellow-500 fill-yellow-500" size={14} />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  "Идеально для мам в декрете! Работаю в удобное время, задания простые и понятные. За 2 месяца вознаграждение выросло на 40%."
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-primary/20 hover:border-primary/50 transition-all bg-card/80 backdrop-blur">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 gradient-green-gold rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    И
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-foreground">Игорь</h4>
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" className="text-yellow-500 fill-yellow-500" size={14} />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  "Совмещаю с основной работой. 2-3 часа в день приносят хороший дополнительный доход. Поддержка всегда на связи, всё честно."
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-primary/20 hover:border-primary/50 transition-all bg-card/80 backdrop-blur">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 gradient-green-gold rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    О
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-foreground">Ольга</h4>
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" className="text-yellow-500 fill-yellow-500" size={14} />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  "Лучший сервис для заработка! За 4 месяца работы ни одной задержки с выплатами. Вознаграждение действительно растёт каждый месяц!"
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-muted-foreground text-lg mb-6">
+              Присоединяйтесь к нашей команде успешных партнёров!
+            </p>
+            <Button 
+              size="lg" 
+              className="gradient-green-gold text-white hover:opacity-90 text-lg px-8 py-6 h-auto font-semibold shadow-xl"
+              onClick={() => handleContactClick('https://t.me/imvesty')}
+            >
+              <Icon name="UserPlus" className="mr-2" size={24} />
+              Начать зарабатывать
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <footer className="bg-card border-t border-primary/20 py-12 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-8">
