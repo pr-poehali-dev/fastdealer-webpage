@@ -171,7 +171,7 @@ const Index = () => {
       <footer className="bg-card border-t border-primary/20 py-12 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-2 gradient-green-gold bg-clip-text text-[#ffffff]">
+            <h3 className="text-2xl font-bold mb-2 gradient-green-gold bg-clip-text text-[#ffffff] mx-[363px]">
               FASTDEALER
             </h3>
             <p className="text-muted-foreground">Наши контакты</p>
