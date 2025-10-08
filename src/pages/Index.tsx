@@ -171,10 +171,10 @@ const Index = () => {
             <h3 className="text-2xl font-bold mb-2 gradient-green-gold bg-clip-text text-[#ffffff] mx-[363px]">
               FASTDEALER
             </h3>
-            <p className="text-muted-foreground px-0 py-2.5 text-lg font-bold">Наши контакты</p>
+            <p className="text-muted-foreground px-0 text-lg font-bold py-2.5">Наши контакты👇</p>
           </div>
           
-          <div className="flex justify-center gap-6 mb-8">
+          <div className="flex justify-center gap-6 py-0 px-0 mx-[291px] my-[37px]">
             {contacts.map((contact) => (
               <Button
                 key={contact.name}
