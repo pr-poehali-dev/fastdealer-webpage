@@ -307,9 +307,10 @@ const Index = () => {
                   <div>
                     <h4 className="font-bold text-foreground">Мария</h4>
                     <div className="flex gap-1">
-                      {[...Array(5)].map((_, i) => (
+                      {[...Array(4)].map((_, i) => (
                         <Icon key={i} name="Star" className="text-yellow-500 fill-yellow-500" size={14} />
                       ))}
+                      <Icon name="Star" className="text-yellow-500" size={14} />
                     </div>
                   </div>
                 </div>
@@ -370,9 +371,10 @@ const Index = () => {
                   <div>
                     <h4 className="font-bold text-foreground">Игорь</h4>
                     <div className="flex gap-1">
-                      {[...Array(5)].map((_, i) => (
+                      {[...Array(4)].map((_, i) => (
                         <Icon key={i} name="Star" className="text-yellow-500 fill-yellow-500" size={14} />
                       ))}
+                      <Icon name="Star" className="text-yellow-500" size={14} />
                     </div>
                   </div>
                 </div>
