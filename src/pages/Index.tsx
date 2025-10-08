@@ -171,10 +171,10 @@ const Index = () => {
       <footer className="bg-card border-t border-primary/20 py-12 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-2 gradient-green-gold bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold mb-2 gradient-green-gold bg-clip-text text-[#ffffff]">
               FASTDEALER
             </h3>
-            <p className="text-muted-foreground">Свяжитесь с нами удобным способом</p>
+            <p className="text-muted-foreground">Наши контакты</p>
           </div>
           
           <div className="flex justify-center gap-6 mb-8">
@@ -193,7 +193,7 @@ const Index = () => {
           </div>
 
           <div className="text-center text-muted-foreground text-sm">
-            <p>© 2024 FASTDEALER. Все права защищены.</p>
+            <p>© 2025 FASTDEALER. Все права защищены.</p>
           </div>
         </div>
       </footer>
