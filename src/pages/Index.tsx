@@ -39,17 +39,17 @@ const contacts = [
   {
     name: "Telegram",
     icon: "Send",
-    url: "https://t.me/"
+    url: "https://t.me/imvesty"
   },
   {
     name: "WhatsApp",
     icon: "MessageCircle",
-    url: "https://wa.me/"
+    url: "https://wa.me/qr/VZWAI4RAH4P2P1"
   },
   {
     name: "VK",
     icon: "Share2",
-    url: "https://vk.com/"
+    url: "https://vk.com/wfawfawa222"
   }
 ];
 
@@ -76,7 +76,7 @@ const Index = () => {
             <Button 
               size="lg" 
               className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 h-auto font-semibold shadow-2xl animate-scale-in"
-              onClick={() => handleContactClick('https://t.me/')}
+              onClick={() => handleContactClick('https://t.me/imvesty')}
             >
               <Icon name="Sparkles" className="mr-2" size={24} />
               Оставить заявку на сотрудничество
