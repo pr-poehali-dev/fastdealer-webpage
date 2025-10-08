@@ -104,9 +104,9 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="categories" className="py-20 px-4">
+      <section id="categories" className="py-12 md:py-20 px-4">
         <div ref={categoriesAnim.ref} className={`container mx-auto transition-all duration-1000 ${categoriesAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="md:text-5xl text-center mb-16 gradient-green-gold bg-clip-text text-5xl text-[#ffffff] py-2.5 font-bold px-0 mx-[225px]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-center mb-12 md:mb-16 gradient-green-gold bg-clip-text text-[#ffffff] py-2.5 font-bold px-4">
             Категории предложений
           </h2>
           
@@ -130,15 +130,15 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="how-it-works" className="py-20 px-4 gradient-green-gold-soft">
+      <section id="how-it-works" className="py-12 md:py-20 px-4 gradient-green-gold-soft">
         <div ref={howItWorksAnim.ref} className={`container mx-auto max-w-5xl transition-all duration-1000 ${howItWorksAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-foreground px-4">
               Как это работает?
             </h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <div className="text-center animate-fade-in">
               <div className="w-20 h-20 gradient-green-gold rounded-full flex items-center justify-center mx-auto mb-4 text-white text-3xl font-bold">
                 1
@@ -164,14 +164,14 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="mt-16 p-8 bg-card rounded-2xl border border-primary/30">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 gradient-green-gold rounded-lg flex items-center justify-center flex-shrink-0">
-                <Icon name="TrendingUp" className="text-white" size={24} />
+          <div className="mt-8 md:mt-16 p-6 md:p-8 bg-card rounded-2xl border border-primary/30">
+            <div className="flex items-start gap-3 md:gap-4">
+              <div className="w-10 h-10 md:w-12 md:h-12 gradient-green-gold rounded-lg flex items-center justify-center flex-shrink-0">
+                <Icon name="TrendingUp" className="text-white" size={20} />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground">Ежемесячный рост дохода</h3>
-                <p className="text-muted-foreground text-lg">
+                <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-foreground">Ежемесячный рост дохода</h3>
+                <p className="text-muted-foreground text-base md:text-lg">
                   Мы учитываем ваш вклад в развитие проекта и ежемесячно повышаем ваше фиксированное вознаграждение!
                 </p>
               </div>
@@ -180,13 +180,13 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="payments" className="py-20 px-4 bg-background">
+      <section id="payments" className="py-12 md:py-20 px-4 bg-background">
         <div ref={paymentsAnim.ref} className={`container mx-auto max-w-6xl transition-all duration-1000 ${paymentsAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold gradient-green-gold bg-clip-text text-[#ffffff] my-0 py-[3px]">
+          <div className="text-center mb-8 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-green-gold bg-clip-text text-[#ffffff] my-0 py-[3px] px-4">
               Выплаты нашим клиентам
             </h2>
-            <p className="text-muted-foreground text-lg py-[26px]">
+            <p className="text-muted-foreground text-base md:text-lg py-4 md:py-[26px] px-4">
               Реальные выплаты реальным людям — мы ценим каждого партнёра
             </p>
           </div>
@@ -253,22 +253,22 @@ const Index = () => {
             </Card>
           </div>
 
-          <div className="mt-12 text-center">
-            <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 border border-primary/30 rounded-full">
+          <div className="mt-8 md:mt-12 text-center px-4">
+            <div className="inline-flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 bg-primary/10 border border-primary/30 rounded-full">
               <Icon name="CheckCircle" className="text-primary" size={20} />
-              <p className="text-foreground font-semibold">Холд для новичков всего 2 недели!</p>
+              <p className="text-foreground font-semibold text-sm md:text-base">Холд для новичков всего 2 недели!</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-4 gradient-green-gold-soft">
+      <section className="py-12 md:py-20 px-4 gradient-green-gold-soft">
         <div ref={reviewsAnim.ref} className={`container mx-auto max-w-6xl transition-all duration-1000 ${reviewsAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <div className="text-center mb-8 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 md:mb-4 text-foreground px-4">
               Отзывы наших партнёров
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-base md:text-lg px-4">
               Реальные истории успеха людей, которые с нами зарабатывают
             </p>
           </div>
@@ -403,8 +403,8 @@ const Index = () => {
             </Card>
           </div>
 
-          <div className="mt-12 text-center">
-            <p className="text-muted-foreground text-lg mb-6">
+          <div className="mt-8 md:mt-12 text-center px-4">
+            <p className="text-muted-foreground text-base md:text-lg mb-4 md:mb-6">
               Присоединяйтесь к нашей команде успешных партнёров!
             </p>
             <Button 
@@ -419,13 +419,13 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="faq" className="py-20 px-4 bg-background">
+      <section id="faq" className="py-12 md:py-20 px-4 bg-background">
         <div ref={faqAnim.ref} className={`container mx-auto max-w-4xl transition-all duration-1000 ${faqAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-green-gold bg-clip-text text-[#ffffff] my-0 py-[3px]">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 md:mb-4 gradient-green-gold bg-clip-text text-[#ffffff] my-0 py-[3px] px-4">
               Частые вопросы
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-base md:text-lg px-4">
               Ответы на самые популярные вопросы о работе с FASTDEALER
             </p>
           </div>
@@ -433,22 +433,22 @@ const Index = () => {
         </div>
       </section>
 
-      <footer id="contacts" className="bg-card border-t border-primary/20 py-12 px-4">
+      <footer id="contacts" className="bg-card border-t border-primary/20 py-8 md:py-12 px-4">
         <div ref={footerAnim.ref} className={`container mx-auto max-w-6xl transition-all duration-1000 ${footerAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-2 gradient-green-gold bg-clip-text text-[#ffffff] mx-[363px]">
+          <div className="text-center mb-6 md:mb-8">
+            <h3 className="text-xl md:text-2xl font-bold mb-2 gradient-green-gold bg-clip-text text-[#ffffff] px-4">
               FASTDEALER
             </h3>
-            <p className="text-muted-foreground px-0 text-lg font-bold py-2.5">Наши контакты👇</p>
+            <p className="text-muted-foreground text-base md:text-lg font-bold py-2.5 px-4">Наши контакты👇</p>
           </div>
           
-          <div className="flex justify-center gap-6 py-0 px-0 mx-[291px] my-[37px]">
+          <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mb-6 md:mb-8 px-4">
             {contacts.map((contact) => (
               <Button
                 key={contact.name}
                 variant="outline"
                 size="lg"
-                className="border-primary/30 hover:border-primary hover:bg-primary/10 transition-all"
+                className="border-primary/30 hover:border-primary hover:bg-primary/10 transition-all w-full sm:w-auto"
                 onClick={() => handleContactClick(contact.url)}
               >
                 <Icon name={contact.icon} className="mr-2" size={20} />
