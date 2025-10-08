@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import MobileMenu from "@/components/MobileMenu";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const categories = [
   {
@@ -55,6 +56,12 @@ const contacts = [
 ];
 
 const Index = () => {
+  const categoriesAnim = useScrollAnimation();
+  const howItWorksAnim = useScrollAnimation();
+  const paymentsAnim = useScrollAnimation();
+  const reviewsAnim = useScrollAnimation();
+  const footerAnim = useScrollAnimation();
+
   const handleContactClick = (url: string) => {
     window.open(url, '_blank');
   };
@@ -92,7 +99,7 @@ const Index = () => {
       </section>
 
       <section id="categories" className="py-20 px-4">
-        <div className="container mx-auto">
+        <div ref={categoriesAnim.ref} className={`container mx-auto transition-all duration-1000 ${categoriesAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="md:text-5xl text-center mb-16 gradient-green-gold bg-clip-text text-5xl text-[#ffffff] py-2.5 font-bold px-0 mx-[225px]">
             Категории предложений
           </h2>
@@ -117,8 +124,8 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4 gradient-green-gold-soft">
-        <div className="container mx-auto max-w-5xl">
+      <section id="how-it-works" className="py-20 px-4 gradient-green-gold-soft">
+        <div ref={howItWorksAnim.ref} className={`container mx-auto max-w-5xl transition-all duration-1000 ${howItWorksAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Как это работает?
@@ -168,7 +175,7 @@ const Index = () => {
       </section>
 
       <section id="payments" className="py-20 px-4 bg-background">
-        <div className="container mx-auto max-w-6xl">
+        <div ref={paymentsAnim.ref} className={`container mx-auto max-w-6xl transition-all duration-1000 ${paymentsAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold gradient-green-gold bg-clip-text text-[#ffffff] my-0 py-[3px]">
               Выплаты нашим клиентам
@@ -250,7 +257,7 @@ const Index = () => {
       </section>
 
       <section className="py-20 px-4 gradient-green-gold-soft">
-        <div className="container mx-auto max-w-6xl">
+        <div ref={reviewsAnim.ref} className={`container mx-auto max-w-6xl transition-all duration-1000 ${reviewsAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
               Отзывы наших партнёров
@@ -407,7 +414,7 @@ const Index = () => {
       </section>
 
       <footer id="contacts" className="bg-card border-t border-primary/20 py-12 px-4">
-        <div className="container mx-auto max-w-6xl">
+        <div ref={footerAnim.ref} className={`container mx-auto max-w-6xl transition-all duration-1000 ${footerAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold mb-2 gradient-green-gold bg-clip-text text-[#ffffff] mx-[363px]">
               FASTDEALER
