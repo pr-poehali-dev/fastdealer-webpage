@@ -94,7 +94,7 @@ const Index = () => {
 
       <section className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 gradient-green-gold bg-clip-text text-[#000000]">
+          <h2 className="md:text-5xl text-center mb-16 gradient-green-gold bg-clip-text text-5xl text-[#ffffff] py-2.5 font-bold px-0">
             Категории предложений
           </h2>
           
