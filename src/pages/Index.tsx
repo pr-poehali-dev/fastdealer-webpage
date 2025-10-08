@@ -61,7 +61,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <MobileMenu onContactClick={() => handleContactClick('https://t.me/imvesty')} />
+      <MobileMenu onContactClick={() => handleContactClick('https://t.me/m/NB4CuKCDYmJi')} />
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 gradient-green-gold opacity-90" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
@@ -78,7 +78,7 @@ const Index = () => {
             <Button 
               size="lg" 
               className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 h-auto font-semibold shadow-2xl animate-scale-in"
-              onClick={() => handleContactClick('https://t.me/imvesty')}
+              onClick={() => handleContactClick('https://t.me/m/NB4CuKCDYmJi')}
             >
               <Icon name="Sparkles" className="mr-2" size={24} />
               Оставить заявку на сотрудничество
@@ -397,7 +397,7 @@ const Index = () => {
             <Button 
               size="lg" 
               className="gradient-green-gold text-white hover:opacity-90 text-lg px-8 py-6 h-auto font-semibold shadow-xl"
-              onClick={() => handleContactClick('https://t.me/imvesty')}
+              onClick={() => handleContactClick('https://t.me/m/NB4CuKCDYmJi')}
             >
               <Icon name="UserPlus" className="mr-2" size={24} />
               Начать зарабатывать
